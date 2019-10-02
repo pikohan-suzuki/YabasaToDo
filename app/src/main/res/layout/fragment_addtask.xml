@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/add_task_title"
+                android:hint="@string/add_task_title_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/add_task_deadLine"
+            android:hint="@string/add_task_deadLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/add_task_category"
+                android:hint="category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/submit_addtask_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:srcCompat="@android:drawable/ic_dialog_email"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

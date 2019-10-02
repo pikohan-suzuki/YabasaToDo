@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/taskListFragment">
+
+    <fragment android:id="@+id/addTaskFragment"
+              android:name="com.amebaownd.pikohan_nwiatori.yabasatodo.view.ui.AddTaskFragment"
+              android:label="AddTaskFragment">
+        <action android:id="@+id/action_addTaskFragment_to_taskListFragment"
+                app:destination="@id/taskListFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/analyzeFragment"
+              android:name="com.amebaownd.pikohan_nwiatori.yabasatodo.view.ui.AnalyzeFragment"
+              android:label="AnalyzeFragment">
+        <action android:id="@+id/action_analyzeFragment_to_taskListFragment"
+                app:destination="@id/taskListFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/taskListFragment"
+              android:name="com.amebaownd.pikohan_nwiatori.yabasatodo.view.ui.TaskListFragment"
+              android:label="TaskListFragment">
+        <action android:id="@+id/action_taskListFragment_to_analyzeFragment"
+                app:destination="@id/analyzeFragment"/>
+        <action android:id="@+id/action_taskListFragment_to_addTaskFragment"
+                app:destination="@id/addTaskFragment"/>
+        <action android:id="@+id/action_taskListFragment_to_detailTaskFragment"
+                app:destination="@id/detailTaskFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/detailTaskFragment"
+              android:name="com.amebaownd.pikohan_nwiatori.yabasatodo.view.ui.DetailTaskFragment"
+              android:label="DetailTaskFragment">
+        <action android:id="@+id/action_detailTaskFragment_to_taskListFragment"
+                app:destination="@id/taskListFragment"/>
+    </fragment>
+
+</navigation>

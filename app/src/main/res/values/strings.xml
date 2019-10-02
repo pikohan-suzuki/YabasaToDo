@@ -13,4 +13,16 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="weight_desc">Weight(Desc)</string>
+    <string name="weight_asc">Weight(Asc)</string>
+    <string name="deadline">Deadline</string>
+    <string name="yabasa">Yabasa</string>
+    <string name="completed">Completed</string>
+    <string name="active">Active</string>
+    <string name="all">All</string>
+    <string name="completedtask">CompletedTask</string>
+    <string name="activetask">ActiveTask</string>
+    <string name="add_task_title_hint">title</string>
+    <string name="add_task_memo_hint">memo</string>
+    <string name="add_task_deadLine">deadLine</string>
 </resources>
